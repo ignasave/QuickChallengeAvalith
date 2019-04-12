@@ -1,0 +1,24 @@
+.error{
+    color: #e74c3c;
+    padding-bottom: 10px
+}
+
+.go-back{
+    display: block;   
+    font-family: 'Roboto' sans-serif;
+    font-size: 17px;
+    margin:auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.loading{
+    color: #34495e;
+}
+
+.title{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

@@ -1,0 +1,6 @@
+export const SET_DATA = 'SET_DATA'
+export const SET_DETAIL = 'SET_DETAIL'
+export const FETCH_DATA = 'FETCH_DATA'
+export const FETCH_DETAIL = 'FETCH_DETAIL'
+export const RECIEVE_ERROR = 'RECIEVE_ERROR'
+export const RECIEVE_ERROR_DETAIL = 'RECIEVE_ERROR_DETAIL'
