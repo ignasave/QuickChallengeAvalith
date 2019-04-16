@@ -1,24 +1,20 @@
 import './Messages.css'
 import { Link } from 'react-router-dom'
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 
+function isError(props){
+  if(props.type === 'error'){
+    return <Link to="/" className="go-back">Go back</Link>
+  }  
+}
 
-class Message extends Component {
-
-  isError(){
-    if(this.props.type === 'error'){
-      return <Link to="/" className="go-back">Go back</Link>
-    }  
-  }
-
-  render() {
+function Message(props){
     return (
       <Fragment>
-        <h2 className={ this.props.type + ' title' }>{ this.props.message }</h2>
-        {this.isError()}
+        <h2 className={ props.type + ' title' }>{ props.message }</h2>
+        {isError(props)}
       </Fragment>
       )
-  }
 }
 
 export default Message

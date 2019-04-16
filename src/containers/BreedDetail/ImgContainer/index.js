@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ImgContainer.css'
-class ImageContainer extends Component {
-    render() {
+function ImageContainer(props) {
         return (
-            <img alt="" className="image-container" src={this.props.url}></img>
+            <img alt="" className="image-container" src={props.url}></img>
         );
-    }
 }
 
 export default ImageContainer;

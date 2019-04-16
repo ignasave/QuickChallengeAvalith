@@ -3,16 +3,18 @@ import React, { Component, Fragment } from 'react';
 
 class ContentSelector extends Component {
     
+    showCorrespondentContent(self){
+        if(self.props.if){
+         return <Message message="Loading..." type="loading"></Message>
+         } else if(self.props.or){  
+         return <Message message="ERROR" type="error"></Message>  
+         } else{ return self.props.then }
+    }
+
     render() {
         return (
             <Fragment>
-                {
-                    this.props.if 
-                    ? <Message message="Loading..." type="loading"></Message>
-                    : this.props.or 
-                    ? <Message message="ERROR" type="error"></Message>  
-                    : this.props.then
-                }
+                { this.showCorrespondentContent(this) }
             </Fragment>
         );
     }

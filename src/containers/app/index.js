@@ -9,9 +9,7 @@ import { Route, Switch } from 'react-router-dom'
 const App = () => (
   <div className="app">
   
-    <header>
-      <Header></Header>
-    </header>
+    <Header></Header>
 
     <main>
       <Switch>

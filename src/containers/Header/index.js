@@ -1,14 +1,12 @@
 import LinkToHome from './LinkToHome'
-import React, { Component } from 'react'
 import './Header.css'
+import React from 'react'
 
-export default class Header extends Component {
-  render() {
+export default function Header(){
     return (
-        <div className = "header">
+        <header className = "header">
             <LinkToHome></LinkToHome>
-        </div>
+        </header>
     )
-  }
 }
 

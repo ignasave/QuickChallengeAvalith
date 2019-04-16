@@ -1,22 +1,19 @@
 import ListElement from './ListElement'
-import React, { Component } from 'react';
+import React from 'react';
 import './OrderedList.css'
 
-class OrderedList extends Component {
+function renderData(props){
+    return props.breeds.map(breed => {
+        return <ListElement key={breed} content={breed}/>
+    });
+}
 
-    renderData(){
-        return this.props.breeds.map(breed => {
-            return <ListElement key={breed} content={breed}/>
-        });
-    }
-
-    render() {
+function OrderedList(props){
         return (
             <ol className="ordered-list">
-                {this.renderData()}
+                {renderData(props)}
             </ol>
-        );
-    }
+        )
 }
 
 export default OrderedList;
